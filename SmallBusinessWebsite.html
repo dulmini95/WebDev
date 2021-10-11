@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="//imgur.com/a/aR4Uvsw">
+<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  display: inline-block;
+  width: 96.6%;
+  padding: 10px 10px 10px 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  backgr
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://lh3.googleusercontent.com/AX9ABdpVxH-GDolNHjrWl88A90qzKq93fo67C-Vv_KpDpeqFRBY_znfp_79f_XeGjM2PKP5CaptWQGHo2KWZUBT7ctsq1-OLo0AcrSMA-RJMvX4DpL_ULoL96NL6dXKlsq5Azs96PA=w600-h315-p-k");
+  
+}  
+.second{
+  background-image: url("https://lh3.googleusercontent.com/pqe6NBqc27II0Mz-J8uHdWLb0vuiyovH_Xzh--uI7qK0CDTnYZtvRKrJqk-LdfKjAYwCmG-wZzvULFrj-q-dMSvm7ffCrbLpvFsuikVnKmQDpGnBEoB-pWSiiyBchdRpkiAvR6XnWw=w600-h315-p-k");
+}
+.dessert{
+  background-image: url("https://lh3.googleusercontent.com/1IOvenIXgF7GD_oNA4mt1hnAdyLiexdjTd1QD0PuAWv33SafStkAsLivLcMkbJl0tRSrpEBuew3jY6patFaA-KlPIUGx7Xz5ZT-IgMkCJ-SvProhqEi-kVAu_cTn5HskqqmWK6hhQw=w600-h315-p-k");
+  
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    width: 93.3%;
+    padding: 10px 10px 10px 10px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>NOLA Bakery</h1>
+<h2>New Orleans based Cake and Pastery shop</h2>
+<div class="first">
+  <p>Cakes <span class="price">$14</span><br />
+  <small>Flavors: Chocolate, vanilla, ribbon, white chocolate, mint, coffee. </small></p>
+</div>
+
+<div class="second">
+  <p>Pastries<span class="price">$22</span><br />
+  <small>Raspberry breakfast pastries, Boudin, Sausage roll, Veggie rolls, Ranchero, Cannoli.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Cheesecake<span class="price">$8</span><br />
+  <small>Cheesecakes with your choice of toppings. Available toppings: Strawberry, Raspberry & Peach.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
